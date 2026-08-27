@@ -11,7 +11,7 @@
 
 //  CORRECT SOLUTION
 function sortArray<T, K extends keyof T>(array: T[], key: K): T[] {
-  array.sort((a,b) => (a[key] > b[key]) ? -1 : 1);
+  array.sort((a,b) => (a[key] < b[key]) ? -1 : 1);
   return array;
 }
 // Test your sorting function with the following array
