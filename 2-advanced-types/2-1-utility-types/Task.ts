@@ -15,3 +15,6 @@ const task: Task = {
 };
 
 const updatedTask = updateTask(task, { completed: true });
+
+console.log(`updatedTask: \n${JSON.stringify(updatedTask)}\n`);
+console.log(`orginal task: \n${JSON.stringify(task)}`);
